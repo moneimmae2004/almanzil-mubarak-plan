@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنزل مبارك - الحلول المنزلية المتكاملة</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Cairo', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        .section-padding {
+            padding: 80px 0;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .sticky-nav {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 sticky-nav border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-blue-900">
+                            <i class="fas fa-home text-yellow-600 ml-2"></i>
+                            المنزل مبارك
+                        </h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="mr-10 flex items-baseline space-x-4 space-x-reverse">
+                        <a href="#home" class="text-gray-700 hover:text-blue-900 px-3 py-2 rounded-md text-sm font-medium transition">الرئيسية</a>
+                        <a href="#services" class="text-gray-700 hover:text-blue-900 px-3 py-2 rounded-md text-sm font-medium transition">خدماتنا</a>
+                        <a href="#products" class="text-gray-700 hover:text-blue-900 px-3 py-2 rounded-md text-sm font-medium transition">معرض المنتجات</a>
+                        <a href="#contact" class="text-gray-700 hover:text-blue-900 px-3 py-2 rounded-md text-sm font-medium transition">اتصل بنا</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-btn text-gray-700 hover:text-blue-900">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-900">الرئيسية</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-blue-900">خدماتنا</a>
+                <a href="#products" class="block px-3 py-2 text-gray-700 hover:text-blue-900">معرض المنتجات</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-900">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white section-padding mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="mb-8">
+                    <i class="fas fa-home text-6xl text-yellow-400"></i>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">المنزل مبارك</h1>
+                <h2 class="text-xl md:text-2xl mb-8 text-blue-100">الحلول المنزلية المتكاملة</h2>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-blue-100">
+                    نقدم لك كل ما تحتاجه لتحويل منزلك إلى مساحة أحلامك - من التصميم الداخلي والأثاث إلى التكييف والمطابخ
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#services" class="gold-gradient text-white px-8 py-4 rounded-lg font-semibold hover:transform hover:scale-105 transition inline-flex items-center justify-center">
+                        <i class="fas fa-arrow-down ml-2"></i>
+                        اكتشف خدماتنا
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition">
+                        طلب استشارة مجانية
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">خدماتنا المتميزة</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">نوفر لك حلولاً شاملة ومتكاملة لجميع احتياجات منزلك</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-couch text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">الأثاث والتصميم الداخلي</h3>
+                    <p class="text-gray-600 mb-4">توفير أثاث عالي الجودة وخدمات التصميم الداخلي المتخصصة</p>
+                    <ul class="text-sm text-gray-500 text-right">
+                        <li class="mb-1">• أثاث للغرف والصالونات</li>
+                        <li class="mb-1">• تصميم داخلي مخصص</li>
+                        <li>• استشارات التأثيث</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-snowflake text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">التكييف وأنظمة التهوية</h3>
+                    <p class="text-gray-600 mb-4">تصميم وتركيب أنظمة التكييف المركزي والمنفصل</p>
+                    <ul class="text-sm text-gray-500 text-right">
+                        <li class="mb-1">• تكييف مركزي وسبليت</li>
+                        <li class="mb-1">• أنظمة التهوية</li>
+                        <li>• صيانة دورية</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">المطابخ المتكاملة</h3>
+                    <p class="text-gray-600 mb-4">تصميم وتنفيذ مطابخ حديثة بأحدث المعايير العالمية</p>
+                    <ul class="text-sm text-gray-500 text-right">
+                        <li class="mb-1">• مطابخ مخصصة حسب الطلب</li>
+                        <li class="mb-1">• خزائن وأدراج ذكية</li>
+                        <li>• أجهزة مطبخ متطورة</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-closet text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">خزائن غرف النوم</h3>
+                    <p class="text-gray-600 mb-4">تصميم خزائن ملابس عملية وأنيقة لجميع المساحات</p>
+                    <ul class="text-sm text-gray-500 text-right">
+                        <li class="mb-1">• خزائن ملابس مخصصة</li>
+                        <li class="mb-1">• تنظيم داخلي ذكي</li>
+                        <li>• مرايا وإضاءة LED</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tv text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">الأجهزة الكهربائية</h3>
+                    <p class="text-gray-600 mb-4">توفير أجهزة كهربائية موثوقة وعالية الكفاءة</p>
+                    <ul class="text-sm text-gray-500 text-right">
+                        <li class="mb-1">• ثلاجات وغسالات</li>
+                        <li class="mb-1">• أفران وميكروويف</li>
+                        <li>• استشارات الاختيار</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6 text-center border border-gray-100">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">الديكور والإضاءة</h3>
+                    <p class="text-gray-600 mb-4">حلول ديكور عصرية وأنظمة إضاءة ذكية</p>
+                    <ul class="text-sm text-gray-500 text-right">
+                        <li class="mb-1">• ستائر وسجاد</li>
+                        <li class="mb-1">• إضاءة ذكية</li>
+                        <li>• أعمال فنية</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-16">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white">
+                    <h3 class="text-2xl font-bold mb-4">حلول شاملة "تسليم مفتاح"</h3>
+                    <p class="text-xl mb-6">نتولى تنسيق جميع الخدمات لتسليم منزلك جاهزاً للسكن</p>
+                    <a href="#contact" class="gold-gradient text-white px-8 py-3 rounded-lg font-semibold hover:transform hover:scale-105 transition inline-flex items-center">
+                        <i class="fas fa-phone ml-2"></i>
+                        اطلب خدمتك الآن
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Gallery Section -->
+    <section id="products" class="section-padding bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">معرض منتجاتنا</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">اكتشف مجموعة متنوعة من المنتجات عالية الجودة</p>
+            </div>
+
+            <!-- Product Categories -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-chair text-white text-6xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">أثاث الصالونات</h3>
+                        <p class="text-gray-600 text-sm">كنبات وكراسي عصرية وكلاسيكية</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-bed text-white text-6xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">أثاث غرف النوم</h3>
+                        <p class="text-gray-600 text-sm">أسرة وخزائن وطاولات جانبية</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center">
+                        <i class="fas fa-blender text-white text-6xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">أجهزة المطبخ</h3>
+                        <p class="text-gray-600 text-sm">أجهزة حديثة وعملية للمطبخ</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-paint-brush text-white text-6xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">ديكورات منزلية</h3>
+                        <p class="text-gray-600 text-sm">لوحات، مرايا، وإكسسوارات</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-medal text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">جودة مضمونة</h3>
+                    <p class="text-gray-600">نتعامل مع أفضل الموردين لضمان أعلى مستوى من الجودة</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-truck text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">توصيل وتركيب</h3>
+                    <p class="text-gray-600">خدمة توصيل مجانية وتركيب احترافي لجميع المنتجات</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tools text-3xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">ضمان شامل</h3>
+                    <p class="text-gray-600">ضمان على جميع المنتجات مع خدمة صيانة دورية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">تواصل معنا</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">نحن هنا لمساعدتك في تحقيق حلم منزلك المثالي</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-900">احصل على استشارة مجانية</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">الاسم الكامل</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="أدخل اسمك الكامل">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">رقم الجوال</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="05xxxxxxxx">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">البريد الإلكتروني</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="example@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">نوع الخدمة المطلوبة</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option>اختر نوع الخدمة</option>
+                                <option>أثاث وتصميم داخلي</option>
+                                <option>تكييف وتهوية</option>
+                                <option>مطابخ متكاملة</option>
+                                <option>خزائن غرف النوم</option>
+                                <option>أجهزة كهربائية</option>
+                                <option>ديكور وإضاءة</option>
+                                <option>حلول شاملة</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">تفاصيل إضافية</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="اكتب تفاصيل مشروعك أو أي ملاحظات خاصة"></textarea>
+                        </div>
+                        <button type="submit" class="w-full gold-gradient text-white py-4 rounded-lg font-semibold hover:transform hover:scale-105 transition">
+                            <i class="fas fa-paper-plane ml-2"></i>
+                            إرسال الطلب
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-900">معلومات التواصل</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center ml-4 flex-shrink-0">
+                                    <i class="fas fa-phone text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">الهاتف</h4>
+                                    <p class="text-gray-600">+966 50 123 4567</p>
+                                    <p class="text-gray-600">+966 11 123 4567</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center ml-4 flex-shrink-0">
+                                    <i class="fab fa-whatsapp text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">واتساب</h4>
+                                    <p class="text-gray-600">+966 50 123 4567</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center ml-4 flex-shrink-0">
+                                    <i class="fas fa-envelope text-red-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">البريد الإلكتروني</h4>
+                                    <p class="text-gray-600">info@almanzil-mubarak.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center ml-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">العنوان</h4>
+                                    <p class="text-gray-600">الرياض، المملكة العربية السعودية</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center ml-4 flex-shrink-0">
+                                    <i class="fas fa-clock text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">ساعات العمل</h4>
+                                    <p class="text-gray-600">السبت - الخميس: 8:00 ص - 6:00 م</p>
+                                    <p class="text-gray-600">الجمعة: 2:00 م - 6:00 م</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-4">تابعنا على</h4>
+                        <div class="flex space-x-4 space-x-reverse">
+                            <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-800 text-white rounded-full flex items-center justify-center hover:bg-blue-900 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-home text-2xl text-yellow-400 ml-2"></i>
+                        <h3 class="text-2xl font-bold">المنزل مبارك</h3>
+                    </div>
+                    <p class="text-blue-100 mb-4">
+                        نحن شركة متخصصة في تقديم الحلول المنزلية المتكاملة، نساعدك في تحويل منزلك إلى مساحة أحلامك بأعلى معايير الجودة والأناقة.
+                    </p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">خدماتنا</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">أثاث وتصميم داخلي</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">تكييف وتهوية</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">مطابخ متكاملة</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">خزائن غرف النوم</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">أجهزة كهربائية</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">روابط مهمة</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-blue-200 hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="#services" class="text-blue-200 hover:text-white transition">خدماتنا</a></li>
+                        <li><a href="#products" class="text-blue-200 hover:text-white transition">معرض المنتجات</a></li>
+                        <li><a href="#contact" class="text-blue-200 hover:text-white transition">اتصل بنا</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-400 mt-8 pt-8 text-center">
+                <p class="text-blue-100">
+                    ©️ 2024 المنزل مبارك. جميع الحقوق محفوظة.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Add scroll effect to navigation
+            window.addEventListener('scroll', function() {
+                const nav = document.querySelector('nav');
+                if (window.scrollY > 100) {
+                    nav.classList.add('shadow-lg');
+                } else {
+                    nav.classList.remove('shadow-lg');
+                }
+            });
+
+            // Form submission (placeholder)
+            document.querySelector('form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('شكراً لتواصلك معنا! سنقوم بالرد عليك في أقرب وقت ممكن.');
+            });
+        });
+    </script>
+</body>
+</html>
